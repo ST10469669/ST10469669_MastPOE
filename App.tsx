@@ -2,25 +2,29 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import WelcomeScreen from "./assets/screens/WelcomeScreen";
-import HomeScreen from "./assets/screens/HomeScreen";
+import EditScreen from "./assets/screens/EditScreen";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import MenuScreen from "./assets/screens/MenuScreen";
 
-const Stack = createNativeStackNavigator();
 
-export default function App({navigation}:{navigation:any}) {
+
+
+const Tab = createBottomTabNavigator();
+
+export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Welcome">
-        <Stack.Screen
-          name="Welcome"
-          component={WelcomeScreen}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{ title: "Choose Food" }}
-        />
-      </Stack.Navigator>
+      <Tab.Navigator
+        screenOptions={({
+          headerShown: false,
+          tabBarActiveTintColor: "tomato",
+          tabBarInactiveTintColor: "gray",
+        })}
+      >
+        <Tab.Screen name="Welcome" component={WelcomeScreen} />
+        <Tab.Screen name="Menu" component={MenuScreen} />
+        <Tab.Screen name="Edit" component={EditScreen} options={{tabBarStyle: { display: "none" }}} />
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }

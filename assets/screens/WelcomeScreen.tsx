@@ -17,17 +17,7 @@ export default function Welcome({ navigation }: { navigation: any }) {
         <Text style={styles.title}>Welcome to Chef Christoffel's App</Text>
         <Text style={styles.subtitle}>Let's order some delicious meals!</Text>
 
-        <TouchableOpacity
-          style={[
-            styles.customButton,
-            { backgroundColor: 'orange', borderWidth: 1, borderColor: 'orange' },
-          ]}
-          activeOpacity={0.8}
-          onPress={() => navigation.navigate('Home')}
-          accessibilityRole="button"
-        >
-          <Text style={styles.buttonText}>Order Now</Text>
-        </TouchableOpacity>
+       
       </View>
     </ImageBackground>
   );
