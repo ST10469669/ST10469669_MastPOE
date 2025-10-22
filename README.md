@@ -2,6 +2,9 @@ POE Part-2
 Food App for chef Christoffel
 A React Native Expo app that lets users view a food menu and allows chefs to edit and add new menu items dynamically.
 
+
+https://github.com/VCCT-MAST5112-2025-G1/ST10469669_MastPOE
+
 Screens
 Welcome – Intro screen (not included in this repo)
 Menu – View categorized menu with dropdown selection
@@ -54,6 +57,11 @@ Browse menu items by category (Main, Dessert, Drinks)
 Add new menu items with name and price
 Tab navigation with icons using emojis
 Background images for an appealing UI
+
+YouTube Video link:
+
+https://youtu.be/8A35zSZlijk?si=bKGT0j1Oz7M1lpmO
+
 
 
 Screenshots
