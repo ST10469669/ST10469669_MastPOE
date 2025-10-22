@@ -91,6 +91,10 @@ Expo.n.d. Expo Documentation [Online] Available at: <https://docs.expo.dev/get-s
 
 [Accessed 22 October 2025]
 
+Pinterest,2025. Pinterest [Online] availavle at:<https://za.pinterest.com/maenhussein/cartoon-chef/ >
+
+[Accessed 22 October2025]
+
 
 
 
