@@ -30,19 +30,19 @@ export default function MenuScreen({ navigation }: { navigation: any }) {
 
       <Text style={styles.hh}>Description</Text>
       <Text testID="change">{selectedValue}</Text>
-      {selectedValue === "main" && <Text testID="change">steak:250,chicken:100</Text>}
-      {selectedValue === "dessert" && <Text testID="change">Chocolate cake:R250,strawberry:R100</Text>}
-      {selectedValue === "drinks" && <Text testID="change">coke:R400,Fanta:R350</Text>}
+      {selectedValue === "main" && <Text testID="change">steak:250,chicken:105</Text>}
+      {selectedValue === "dessert" && <Text testID="change">Chocolate cake:R70,strawberry:R100</Text>}
+      {selectedValue === "drinks" && <Text testID="change">coke:R40,Fanta:R35</Text>}
        <TouchableOpacity
                 style={[
                   styles.customButton,
                   { backgroundColor: 'orange', borderWidth: 1, borderColor: 'orange' },
                 ]}
                 activeOpacity={0.8}
-                onPress={() => navigation.navigate('Welcome')}
+                onPress={() => navigation.navigate('Edit')}
                 accessibilityRole="button"
               >
-                <Text style={styles.buttonText}>Order Now</Text>
+                <Text style={styles.buttonText}>Edit Menu</Text>
               </TouchableOpacity>
     </View>
     </ImageBackground>
