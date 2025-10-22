@@ -6,6 +6,8 @@ import { View, Text, StyleSheet,TouchableOpacity,FlatList,TextInput } from "reac
 import { ImageBackground } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+
+
 export default function HomeScreen({ navigation }: { navigation: any }) {
   const [menuItems, setMenuItems] = useState([
     { name: "Steak", price: 250 },
