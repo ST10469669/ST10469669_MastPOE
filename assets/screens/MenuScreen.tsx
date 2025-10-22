@@ -17,7 +17,7 @@ export default function MenuScreen({ navigation }: { navigation: any }) {
       style={styles.background}
     >
       <View style={styles.container}>
-        <Text>Menu Screen</Text>
+        <Text>Menu</Text>
 
       <Text>Choose category</Text>
       <Picker
