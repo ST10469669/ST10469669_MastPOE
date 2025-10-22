@@ -6,6 +6,7 @@ import WelcomeScreen from "./assets/screens/WelcomeScreen";
 import EditScreen from "./assets/screens/EditScreen";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MenuScreen from "./assets/screens/MenuScreen";
+import { MenuProvider } from "./assets/context/MenuContext";
 
 
 
@@ -14,6 +15,7 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
+    <MenuProvider>
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={({ route }) => ({
@@ -36,5 +38,6 @@ export default function App() {
         <Tab.Screen name="Edit" component={EditScreen} options={{tabBarStyle: { display: "none" }}} />
       </Tab.Navigator>
     </NavigationContainer>
+    </MenuProvider>
   );
 }
