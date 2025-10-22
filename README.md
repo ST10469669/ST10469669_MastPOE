@@ -64,6 +64,7 @@ Screenshots
 <img width="285" height="506" alt="image" src="https://github.com/user-attachments/assets/aa616fd0-f201-4835-bfe4-e3bdfa82ced5" />
 
 Reference list
+
 React native.n.d. ReactNative [Online] Available at: <https://reactnative.dev/docs/getting-started >
 
 [Accessed 21 October 2025]
