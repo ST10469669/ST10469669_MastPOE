@@ -55,9 +55,11 @@ Add new menu items with name and price
 Tab navigation with icons using emojis
 Background images for an appealing UI
 Screenshots
-<img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/520a8df3-d12b-4c90-a954-c4321b1a5491" />
-<img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/ae65d21f-ef57-4356-9cab-3b6f9f9e1f83" />
-<img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/05be9d08-e007-421f-a9c5-3a8388107d87" />
+<img width="292" height="519" alt="image" src="https://github.com/user-attachments/assets/5ed65042-54f9-4c99-96ae-de70d18cba14" />
+<img width="290" height="515" alt="image" src="https://github.com/user-attachments/assets/16052d3c-6c8c-4411-b068-11c29559a87a" />
+<img width="285" height="506" alt="image" src="https://github.com/user-attachments/assets/aa616fd0-f201-4835-bfe4-e3bdfa82ced5" />
+
+
 
 
 
