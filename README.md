@@ -54,7 +54,11 @@ Browse menu items by category (Main, Dessert, Drinks)
 Add new menu items with name and price
 Tab navigation with icons using emojis
 Background images for an appealing UI
+
+
 Screenshots
+
+
 <img width="292" height="519" alt="image" src="https://github.com/user-attachments/assets/5ed65042-54f9-4c99-96ae-de70d18cba14" />
 <img width="290" height="515" alt="image" src="https://github.com/user-attachments/assets/16052d3c-6c8c-4411-b068-11c29559a87a" />
 <img width="285" height="506" alt="image" src="https://github.com/user-attachments/assets/aa616fd0-f201-4835-bfe4-e3bdfa82ced5" />
