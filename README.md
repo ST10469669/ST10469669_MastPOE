@@ -95,6 +95,31 @@ Pinterest,2025. Pinterest [Online] Available at:<https://za.pinterest.com/maenhu
 
 [Accessed 22 October2025]
 
+AI Dislosure
+
+Section were AI was used:
+
+The FAQ and the app discription. also the links of the reference link.
+
+AI Tool ChatGPT5
+
+Purpose:
+
+i asked ai to give me a more grammer correct sentencing. and also to sturcture the words for me.
+
+Dates used: 21/10/2025-22/10/2025
+
+prompts used:
+
+"can you make a read me for my food app"
+
+Conversation screenShot:
+
+<img width="586" height="506" alt="image" src="https://github.com/user-attachments/assets/5926c8d2-3d20-4a1d-9778-1d4ece000352" />
+
+
+
+
 
 
 
