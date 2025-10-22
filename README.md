@@ -55,6 +55,11 @@ Add new menu items with name and price
 Tab navigation with icons using emojis
 Background images for an appealing UI
 
+YouTube Video link:
+
+https://youtu.be/8A35zSZlijk?si=bKGT0j1Oz7M1lpmO
+
+
 
 Screenshots
 
