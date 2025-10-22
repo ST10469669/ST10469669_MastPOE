@@ -2,10 +2,12 @@ import React from "react";
 import { Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import WelcomeScreen from "./assets/screens/WelcomeScreen";
-import EditScreen from "./assets/screens/EditScreen";
+import WelcomeScreen from "./screens/WelcomeScreen";
+import EditScreen from "./screens/EditScreen";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import MenuScreen from "./assets/screens/MenuScreen";
+import MenuScreen from "./screens/MenuScreen";
+import { MenuProvider } from "./context/MenuContext";
+
 
 
 
@@ -15,11 +17,11 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
-    
-    <NavigationContainer>
-      <Tab.Navigator
-        screenOptions={({ route }) => ({
-          headerShown: false,
+    <MenuProvider>
+      <NavigationContainer>
+        <Tab.Navigator
+          screenOptions={({ route }) => ({
+            headerShown: false,
           tabBarActiveTintColor: "tomato",
           tabBarInactiveTintColor: "gray",
           tabBarIcon: ({ color, size }) => {
@@ -35,9 +37,10 @@ export default function App() {
       >
         <Tab.Screen name="Welcome" component={WelcomeScreen} />
         <Tab.Screen name="Menu" component={MenuScreen} />
-        <Tab.Screen name="Edit" component={EditScreen} options={{tabBarStyle: { display: "none" }}} />
+        <Tab.Screen name="Edit" component={EditScreen}  />
       </Tab.Navigator>
     </NavigationContainer>
+    </MenuProvider>
    
   );
 }

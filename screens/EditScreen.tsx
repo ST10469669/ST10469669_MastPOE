@@ -5,49 +5,38 @@ import { StatusBar } from 'expo-status-bar';
 import { View, Text, StyleSheet,TouchableOpacity,FlatList,TextInput } from "react-native";
 import { ImageBackground } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { useMenu } from "../context/MenuContext";
 
 
 
-export default function HomeScreen({ navigation }: { navigation: any }) {
-  const [menuItems, setMenuItems] = useState([
-    { name: "Steak", price: 250 },
-    { name: "Chicken", price: 100 },
-    { name: "Chocolate Cake", price: 250 },
-    { name: "Strawberry", price: 100 },
-    { name: "Coke", price: 40 },
-    { name: "Fanta", price: 35 },
-  ]);
-
+export default function EditScreen({ navigation }: { navigation: any }) {
+  const { menuItems, addMenuItem } = useMenu(); 
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
+  const [category, setCategory] = useState<"main" | "dessert" | "drinks">("main");
 
-  const addItem = () => {
+  const handleAdd = () => {
     if (!name || !price) return;
-
-    setMenuItems([...menuItems, { name, price: Number(price) }]);
+    addMenuItem({ name, price: Number(price), category }); 
     setName("");
     setPrice("");
   };
 
   return (
-    <ImageBackground
-      source={require("../chef.webp")}
-      style={styles.background}
-    >
+    <ImageBackground source={require('../assets/chef.webp')} style={styles.background}>
       <View style={styles.container}>
-        <Text style={styles.text}>Chef menu editor</Text>
+        <Text style={styles.text}>Chef Menu Editor</Text>
 
         <FlatList
           data={menuItems}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (
             <Text style={styles.menuItem}>
-              {item.name}: R{item.price}
+              {item.name} (R{item.price}) - {item.category}
             </Text>
           )}
         />
 
-        
         <TextInput
           placeholder="Item Name"
           value={name}
@@ -61,8 +50,14 @@ export default function HomeScreen({ navigation }: { navigation: any }) {
           keyboardType="numeric"
           style={styles.input}
         />
+        <TextInput
+          placeholder="Category (main/dessert/drinks)"
+          value={category}
+          onChangeText={text => setCategory(text as any)}
+          style={styles.input}
+        />
 
-        <TouchableOpacity style={styles.customButton} onPress={addItem}>
+        <TouchableOpacity style={styles.customButton} onPress={handleAdd}>
           <Text style={styles.buttonText}>Add to Menu</Text>
         </TouchableOpacity>
 
