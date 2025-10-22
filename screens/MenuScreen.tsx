@@ -21,6 +21,9 @@ const [selectedCategory, setSelectedCategory] = useState<"" | "main" | "dessert"
         <Text style={styles.title}>Menu</Text>
         <Text style={styles.subtitle}>Choose category</Text>
 
+        <Text style={styles.totalText}>Total Menu Items: {menuItems.length}</Text>
+
+
         <View style={styles.pickerContainer}>
           <Picker
             selectedValue={selectedCategory}
@@ -133,4 +136,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "600",
   },
+  totalText: {
+  fontSize: 16,
+  color: "#444",
+  marginBottom: 10,
+  fontWeight: "500",
+}
+
 });
