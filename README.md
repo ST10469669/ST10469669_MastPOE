@@ -76,7 +76,8 @@ Screenshots
 <img width="290" height="515" alt="image" src="https://github.com/user-attachments/assets/16052d3c-6c8c-4411-b068-11c29559a87a" />
 <img width="285" height="506" alt="image" src="https://github.com/user-attachments/assets/aa616fd0-f201-4835-bfe4-e3bdfa82ced5" />
 <img width="288" height="511" alt="image" src="https://github.com/user-attachments/assets/86992974-957f-47e8-964f-6d6556da0c6f" />
-<img width="309" height="550" alt="image" src="https://github.com/user-attachments/assets/0f4f739e-71d2-4490-af32-ab68aa30c410" />
+<img width="343" height="610" alt="image" src="https://github.com/user-attachments/assets/dba268fa-1057-497c-968b-af2530949068" />
+
 
 
 
