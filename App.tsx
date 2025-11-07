@@ -2,10 +2,10 @@ import React from "react";
 import { Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import WelcomeScreen from "./screens/WelcomeScreen";
-import EditScreen from "./screens/EditScreen";
+import WelcomeScreen from "./src/WelcomeScreen";
+import EditScreen from "./src/EditScreen";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import MenuScreen from "./screens/MenuScreen";
+import MenuScreen from "./src/MenuScreen";
 import { MenuProvider } from "./context/MenuContext";
 
 
