@@ -40,7 +40,6 @@ export default function App() {
         <Tab.Screen name="Edit" component={EditScreen}  />
       </Tab.Navigator>
     </NavigationContainer>
-    </MenuProvider>
-   
+   </MenuProvider>
   );
 }

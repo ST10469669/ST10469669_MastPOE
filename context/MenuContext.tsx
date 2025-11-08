@@ -1,5 +1,5 @@
 
-import React, { createContext, useState, ReactNode, useContext } from "react";
+import React, { createContext, useState, ReactNode, useContext, Children } from "react";
 
 export type MenuItem = {
   name: string;
@@ -10,6 +10,7 @@ export type MenuItem = {
 type MenuContextType = {
   menuItems: MenuItem[];
   addMenuItem: (item: MenuItem) => void;
+  deleteMenuItem?: (name: string) => void;
 };
 
 const MenuContext = createContext<MenuContextType | undefined>(undefined);
@@ -20,7 +21,7 @@ export const useMenu = () => {
   return context;
 };
 
-export const MenuProvider = ({ children }: { children: ReactNode }) => {
+export const MenuProvider = ({ children }: { children: React.ReactNode }) => {
   const [menuItems, setMenuItems] = useState<MenuItem[]>([
     { name: "Steak", price: 250, category: "main" },
     { name: "Chicken", price: 100, category: "main" },
@@ -34,8 +35,12 @@ export const MenuProvider = ({ children }: { children: ReactNode }) => {
     setMenuItems(prev => [...prev, item]);
   };
 
+  const deleteMenuItem = (name: string) => {
+    setMenuItems(prev => prev.filter(item => item.name !== name));
+  };
+
   return (
-    <MenuContext.Provider value={{ menuItems, addMenuItem }}>
+    <MenuContext.Provider value={{ menuItems, addMenuItem, deleteMenuItem }}>
       {children}
     </MenuContext.Provider>
   );
