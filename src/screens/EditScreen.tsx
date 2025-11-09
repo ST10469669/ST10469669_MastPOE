@@ -5,7 +5,7 @@ import { StatusBar } from 'expo-status-bar';
 import { View, Text, StyleSheet,TouchableOpacity,TextInput,Alert } from "react-native";
 import { ImageBackground } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { useMenu } from "../context/MenuContext";
+import { useMenu } from "../../context/MenuContext";
 
 // EditScreen component for adding new menu items
 export default function EditScreen() {
@@ -41,7 +41,8 @@ export default function EditScreen() {
 // background image and form for adding menu items
   return (
     <ImageBackground
-      source={require("../assets/chef.webp")}
+  
+      source={require("../../assets/chef.webp")}
       style={styles.background}
     >
       <View style={styles.container}>

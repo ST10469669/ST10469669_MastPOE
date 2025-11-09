@@ -1,7 +1,7 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { View, Text, StyleSheet, TouchableOpacity,FlatList,Alert } from "react-native";
 import { ImageBackground } from 'react-native';
-import { useMenu } from "../context/MenuContext";
+import { useMenu } from "../../context/MenuContext";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React,{useState} from "react";
 
@@ -37,7 +37,7 @@ const handleDelete = (name: string) => {
 // background image and menu list with delete option
   return (
     <ImageBackground
-      source={require("../assets/chef.webp")}
+      source={require("../../assets/chef.webp")}
       style={styles.background}
     >
       <View style={styles.container}>
