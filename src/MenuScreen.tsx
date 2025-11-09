@@ -13,7 +13,7 @@ export default function MenuScreen() {
 const handleDelete = (name: string) => {
     Alert.alert(
       "Delete Menu Item",
-      `Are you sure you want to delete "${name}" bitch?`,
+      `Are you sure you want to delete "${name}" chef?`,
       [
         {
           text: "Cancel",
@@ -25,7 +25,7 @@ const handleDelete = (name: string) => {
           onPress: () => {
             if (deleteMenuItem) {
               deleteMenuItem(name);
-              Alert.alert("Deleted!", `"${name}" you must be out of your mind, but okay bitch.`);
+              Alert.alert("okay", `"${name}" has been deleted.`);
             }
           }
         }
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     color: "#333",
   },
   deleteButton: {
-    backgroundColor: "#ff4d4d",
+    backgroundColor: "tomato",
     paddingVertical: 6,
     paddingHorizontal: 10,
     borderRadius: 8,

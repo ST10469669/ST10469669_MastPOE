@@ -7,6 +7,8 @@ import EditScreen from "./src/EditScreen";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MenuScreen from "./src/MenuScreen";
 import { MenuProvider } from "./context/MenuContext";
+import { Ionicons } from "@expo/vector-icons";
+
 
 
 
@@ -25,13 +27,16 @@ export default function App() {
           tabBarActiveTintColor: "tomato",
           tabBarInactiveTintColor: "gray",
           tabBarIcon: ({ color, size }) => {
-            const emoji =
-              route.name === "Welcome"
-                ? "🏠"
-                : route.name === "Menu"
-                ? "🍽️"
-                : "✏️";
-            return <Text style={{ fontSize: size ?? 24, color }}>{emoji}</Text>;
+            let iconName: keyof typeof Ionicons.glyphMap;
+
+          if (route.name === "Welcome") {
+            iconName = "home-outline";
+          } else if (route.name === "Menu") {
+            iconName = "restaurant-outline";
+          } else {
+            iconName = "create-outline";
+          }
+            return <Ionicons name={iconName} size={size} color={color} />;
           },
         })}
       >
