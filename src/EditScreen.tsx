@@ -7,14 +7,14 @@ import { ImageBackground } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useMenu } from "../context/MenuContext";
 
-
+// EditScreen component for adding new menu items
 export default function EditScreen() {
   const { addMenuItem } = useMenu();
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
   const [category, setCategory] = useState<"main" | "dessert" | "drinks">("main");
 
-  
+  // Function to handle adding a new menu item and alert message
   const handleAdd = () => {
     if (!name || !price) return;
     Alert.alert(
@@ -38,7 +38,7 @@ export default function EditScreen() {
       { cancelable: true }
     );
   };
-
+// background image and form for adding menu items
   return (
     <ImageBackground
       source={require("../assets/chef.webp")}
@@ -75,7 +75,7 @@ export default function EditScreen() {
     </ImageBackground>
   );
 }
-
+// Styles for the EditScreen component
 const styles = StyleSheet.create({
   background: {
     flex: 1,

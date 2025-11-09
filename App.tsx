@@ -14,7 +14,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 
 
-
+//bottom tab navigator setup
 const Tab = createBottomTabNavigator();
 
 export default function App() {

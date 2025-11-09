@@ -5,6 +5,7 @@ import { useMenu } from "../context/MenuContext";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React,{useState} from "react";
 
+// menu screen component displaying menu items with filtering functionality
 export default function MenuScreen() {
   const { menuItems, deleteMenuItem } = useMenu();
   const [filter, setFilter] = useState<"all" | "main" | "dessert" | "drinks">("all");
@@ -33,7 +34,7 @@ const handleDelete = (name: string) => {
       { cancelable: true }
     );
   };
-
+// background image and menu list with delete option
   return (
     <ImageBackground
       source={require("../assets/chef.webp")}
@@ -60,6 +61,8 @@ const handleDelete = (name: string) => {
           ))}
         </View>
 
+
+     // FlatList to display menu items
         <FlatList
           data={filter === "all" ? menuItems : menuItems.filter(item => item.category === filter)}
           keyExtractor={(item, index) => index.toString()}
@@ -80,7 +83,7 @@ const handleDelete = (name: string) => {
     </ImageBackground>
   );
 }
-
+// Styles for the MenuScreen component
 const styles = StyleSheet.create({
   background: {
     alignItems: "center",

@@ -5,7 +5,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,TouchableOpacity} from 'react-native';
 import { ImageBackground } from 'react-native';
 
-
+// Welcome screen component with background image and navigation
 export default function Welcome({ navigation }: { navigation: any }) {
   return (
 
