@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { StatusBar } from 'expo-status-bar';
-import { View, Text, StyleSheet,TouchableOpacity,TextInput,ScrollView } from "react-native";
+import { View, Text, StyleSheet,TouchableOpacity,TextInput,Alert } from "react-native";
 import { ImageBackground } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useMenu } from "../context/MenuContext";
@@ -14,12 +14,29 @@ export default function EditScreen() {
   const [price, setPrice] = useState("");
   const [category, setCategory] = useState<"main" | "dessert" | "drinks">("main");
 
+  
   const handleAdd = () => {
     if (!name || !price) return;
-    addMenuItem({ name, price: Number(price), category });
-    setName("");
-    setPrice("");
-    setCategory("main");
+    Alert.alert(
+      "Confirm Add",
+      `Are you sure you want to add "${name}" to the menu?`,
+      [
+        {
+          text: "Cancel",
+          style: "cancel",
+        },
+        {
+          text: "Add",
+          onPress: () => {
+            addMenuItem({ name, price: Number(price), category });
+            setName("");
+            setPrice("");
+            setCategory("main");
+          },
+        },
+      ],
+      { cancelable: true }
+    );
   };
 
   return (

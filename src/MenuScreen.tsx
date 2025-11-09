@@ -1,5 +1,5 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { View, Text, StyleSheet, TouchableOpacity,FlatList } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity,FlatList,Alert } from "react-native";
 import { ImageBackground } from 'react-native';
 import { useMenu } from "../context/MenuContext";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -10,8 +10,29 @@ export default function MenuScreen() {
   const [filter, setFilter] = useState<"all" | "main" | "dessert" | "drinks">("all");
 
 
-  const filteredItems =
-    filter === "all" ? menuItems : menuItems.filter((item) => item.category === filter);
+const handleDelete = (name: string) => {
+    Alert.alert(
+      "Delete Menu Item",
+      `Are you sure you want to delete "${name}" bitch?`,
+      [
+        {
+          text: "Cancel",
+          style: "cancel"
+        },
+        {
+          text: "Delete",
+          style: "destructive",
+          onPress: () => {
+            if (deleteMenuItem) {
+              deleteMenuItem(name);
+              Alert.alert("Deleted!", `"${name}" you must be out of your mind, but okay bitch.`);
+            }
+          }
+        }
+      ],
+      { cancelable: true }
+    );
+  };
 
   return (
     <ImageBackground
@@ -21,32 +42,26 @@ export default function MenuScreen() {
       <View style={styles.container}>
         <Text style={styles.title}>🍽️ Chef Christoffel’s Menu</Text>
 
-        {/* Filter Buttons */}
-        <View style={styles.filterContainer}>
+        <View style={{ flexDirection: "row", justifyContent: "space-around", marginBottom: 10 }}>
           {["all", "main", "dessert", "drinks"].map((course) => (
-            <TouchableOpacity
+            <TouchableOpacity 
               key={course}
-              style={[
-                styles.filterButton,
-                filter === course && styles.filterButtonActive,
-              ]}
+              style={{
+                padding: 8,
+                backgroundColor: filter === course ? "tomato" : "#ddd",
+                borderRadius: 5,
+              }}
               onPress={() => setFilter(course as any)}
             >
-              <Text
-                style={[
-                  styles.filterText,
-                  filter === course && styles.filterTextActive,
-                ]}
-              >
+              <Text style={{ color: filter === course ? "#fff" : "#333", fontWeight: "bold" }}>
                 {course === "all" ? "All" : course.charAt(0).toUpperCase() + course.slice(1)}
               </Text>
             </TouchableOpacity>
           ))}
         </View>
 
-        {/* Menu List */}
         <FlatList
-          data={filteredItems}
+          data={filter === "all" ? menuItems : menuItems.filter(item => item.category === filter)}
           keyExtractor={(item, index) => index.toString()}
           showsVerticalScrollIndicator={false}
           style={styles.list}
@@ -55,11 +70,8 @@ export default function MenuScreen() {
               <Text style={styles.menuText}>
                 {item.name} - R{item.price} ({item.category})
               </Text>
-              <TouchableOpacity
-                style={styles.deleteButton}
-                onPress={() => deleteMenuItem && deleteMenuItem(item.name)}
-              >
-                <Text style={styles.deleteText}>❌</Text>
+              <TouchableOpacity style={styles.deleteButton} onPress={() => handleDelete(item.name)}>
+                <Text style={styles.deleteText}>-</Text>
               </TouchableOpacity>
             </View>
           )}
@@ -71,11 +83,11 @@ export default function MenuScreen() {
 
 const styles = StyleSheet.create({
   background: {
+    alignItems: "center",
+    justifyContent: "center",
     flex: 1,
     width: "100%",
     height: "100%",
-    alignItems: "center",
-    justifyContent: "center",
   },
   container: {
     flex: 1,
@@ -88,26 +100,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginVertical: 20,
     color: "#222",
-  },
-  filterContainer: {
-    flexDirection: "row",
-    justifyContent: "space-around",
-    marginBottom: 10,
-  },
-  filterButton: {
-    padding: 8,
-    backgroundColor: "#ddd",
-    borderRadius: 5,
-  },
-  filterButtonActive: {
-    backgroundColor: "tomato",
-  },
-  filterText: {
-    color: "#333",
-    fontWeight: "bold",
-  },
-  filterTextActive: {
-    color: "#fff",
   },
   list: {
     flex: 1,
@@ -139,4 +131,8 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 16,
   },
-});
+});  
+
+  
+    
+  
