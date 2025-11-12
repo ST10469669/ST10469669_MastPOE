@@ -12,6 +12,7 @@ export default function Welcome({ navigation }: { navigation: any }) {
       source={require("../../assets/chef.webp")}
       style={styles.background}
     >
+      
       <View style={styles.container}>
         <Text style={styles.title}>Welcome to Chef Christoffel's App</Text>
         <Text style={styles.subtitle}>Let's order some delicious meals!</Text>
