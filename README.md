@@ -121,6 +121,8 @@ Conversation screenShot:
 
 POE Part 3
 
+https://github.com/VCCT-MAST5112-2025-G1/ST10469669_MastPOE
+
 Changes I made:
 
 - I deleted the drop down.
@@ -156,8 +158,6 @@ Enter name, price, and category
 
 Confirm your action through an Alert
 
-Watch it instantly appear on the menu
-
 YouTube video link for code explanation:
 
 https://youtu.be/7iDCA4fblno?si=arN6zWzuP_jxssSz
@@ -169,6 +169,22 @@ https://youtube.com/shorts/7fgHzTQzzho?si=c76qPWP2pWgYR8Pu
 I did not show how the fileter by category in the video but it works
 
 <img width="259" height="461" alt="image" src="https://github.com/user-attachments/assets/d4818a94-83b9-4266-bd8f-70bd66de0aee" />
+
+Technology used:
+
+React Native
+
+TypeScript
+
+React Navigation
+
+filter
+
+vector icons
+
+
+Project structure:
+
 
 
 
