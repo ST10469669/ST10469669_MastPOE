@@ -158,6 +158,17 @@ Confirm your action through an Alert
 
 Watch it instantly appear on the menu
 
+YouTube video link for code explanation:
+
+https://youtu.be/7iDCA4fblno?si=arN6zWzuP_jxssSz
+
+Youtube video link for app demnstration:
+
+https://youtube.com/shorts/7fgHzTQzzho?si=c76qPWP2pWgYR8Pu
+
+I did not show how the fileter by category in the vidio but it works
+
+
 
   
 
