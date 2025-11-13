@@ -207,6 +207,18 @@ Project structure:
 
  [Accessed 13 November 2025]
 
+ React Navigation, 2025. React Navigation Guide [ Online] Available at: <https://reactnative.dev/docs >
+
+ [Accessed 13 November 2025]
+
+W3Schools, 2025. W3Schools TypeScript Tutorial [Online] Available at: <W3Schools TypeScript Tutorial >
+
+[Accessed 13 November 2025]
+
+
+
+
+
  
 
 
