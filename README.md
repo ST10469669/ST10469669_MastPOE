@@ -119,6 +119,143 @@ Conversation screenShot:
 
 
 
+POE Part 3
+
+https://github.com/VCCT-MAST5112-2025-G1/ST10469669_MastPOE
+
+Changes I made:
+
+- I deleted the drop down.
+
+- Deleted the edit button on the menu screen.
+
+- Added an alert message on the menu screen before adding.
+
+- Added an alert message on the edit screen.
+
+- added a filter on the menu screen.
+
+  App features:
+  
+  WelcomeScreen.tsx
+
+A classy introduction screen that sets the tone featuring a background of the chef himself and a welcoming message.
+
+A perfect place to start your culinary coding adventure.
+
+MenuScreen.tsx
+
+View all dishes in a stylish FlatList
+
+Filter by category
+
+Delete items with a smooth Alert confirmation.
+
+EditScreen.tsx
+
+Enter name, price, and category
+
+Confirm your action through an Alert
+
+YouTube video link for code explanation:
+
+https://youtu.be/7iDCA4fblno?si=arN6zWzuP_jxssSz
+
+Youtube video link for app demonstration:
+
+https://youtube.com/shorts/7fgHzTQzzho?si=c76qPWP2pWgYR8Pu
+
+I did not demonstrate filter by category in the video but it works
+
+<img width="259" height="461" alt="image" src="https://github.com/user-attachments/assets/d4818a94-83b9-4266-bd8f-70bd66de0aee" />
+
+Technology used:
+
+React Native
+
+TypeScript
+
+React Navigation
+
+filter
+
+vector icons
+
+React Context API
+
+React Native FlatList Component
+
+
+Project structure:
+
+ App.tsx file
+
+  Menu context - menu contex.tsx
+
+  src - screens
+
+  Assets - images
+
+
+  Refrance list:
+
+  React native.n.d. ReactNative [Online] Available at: <https://reactnative.dev/docs/getting-started >
+
+  [Accessed 13 November 2025]
+
+  Pinterest,2025. Pinterest [Online] Available at:<https://za.pinterest.com/maenhussein/cartoon-chef/ >
+
+ [Accessed 13 November 2025]
+
+ React Navigation, 2025. React Navigation Guide [ Online] Available at: <https://reactnative.dev/docs >
+
+ [Accessed 13 November 2025]
+
+W3Schools, 2025. W3Schools TypeScript Tutorial [Online] Available at: <https://www.w3schools.com/typescript/ >
+
+[Accessed 13 November 2025]
+
+AI Dislosure
+
+Section were AI was used:
+
+proper grammer
+
+AI Tool ChatGPT5
+
+Purpose:
+
+i asked ai to give me a more grammer correct sentencing. and also to sturcture the words for me.
+
+Dates used: 12/11/2025-13/11/2025
+
+prompts used:
+
+"can you make a read me for my food app"
+
+Conversation screenShot:
+
+<img width="417" height="329" alt="image" src="https://github.com/user-attachments/assets/5ce78b55-7878-4d43-a1e6-14068fd41eef" />
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+  
+
+
+
+
 
 
 
