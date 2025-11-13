@@ -132,6 +132,32 @@ Changes I made:
 - Added an alert message on the edit screen.
 
 - added a filter on the menu screen.
+  
+  WelcomeScreen.tsx
+
+A classy intro scene that sets the tone — featuring a background of the chef himself and a welcoming message.
+
+A perfect place to start your culinary coding adventure.
+
+MenuScreen.tsx
+
+The digital dining room.
+Here, you can:
+
+View all dishes in a stylish FlatList
+
+Filter by category
+
+Delete items with a smooth Alert confirmation.
+
+EditScreen.tsx
+
+Enter name, price, and category
+
+Confirm your action through an Alert
+
+Watch it instantly appear on the menu
+
 
   
 
