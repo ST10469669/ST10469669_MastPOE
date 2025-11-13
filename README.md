@@ -165,7 +165,7 @@ Youtube video link for app demonstration:
 
 https://youtube.com/shorts/7fgHzTQzzho?si=c76qPWP2pWgYR8Pu
 
-I did not show how the fileter by category in the video but it works
+I did not demonstrate filter by category in the video but it works
 
 <img width="259" height="461" alt="image" src="https://github.com/user-attachments/assets/d4818a94-83b9-4266-bd8f-70bd66de0aee" />
 
@@ -198,6 +198,18 @@ Project structure:
 
 
   Refrance list:
+
+  React native.n.d. ReactNative [Online] Available at: <https://reactnative.dev/docs/getting-started >
+
+  [Accessed 13 November 2025]
+
+  Pinterest,2025. Pinterest [Online] Available at:<https://za.pinterest.com/maenhussein/cartoon-chef/ >
+
+ [Accessed 13 November 2025]
+
+ 
+
+
 
 
 
