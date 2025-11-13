@@ -166,7 +166,10 @@ Youtube video link for app demnstration:
 
 https://youtube.com/shorts/7fgHzTQzzho?si=c76qPWP2pWgYR8Pu
 
-I did not show how the fileter by category in the vidio but it works
+I did not show how the fileter by category in the video but it works
+
+<img width="259" height="461" alt="image" src="https://github.com/user-attachments/assets/d4818a94-83b9-4266-bd8f-70bd66de0aee" />
+
 
 
 
