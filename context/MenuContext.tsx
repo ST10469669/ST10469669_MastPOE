@@ -1,5 +1,7 @@
-
 import React, { createContext, useState, ReactNode, useContext, Children } from "react";
+// Inspiration: W3Schools TypeScript Tutorial (https://www.w3schools.com/typescript/)
+// Adapted for handling menu item type definitions
+
 // Define the structure of a menu item and the context type
 export type MenuItem = {
   name: string;

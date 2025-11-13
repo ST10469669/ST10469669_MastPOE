@@ -12,6 +12,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 
 
+// Source: React Navigation Documentation (https://reactnavigation.org/docs/bottom-tab-navigator)
 
 
 //bottom tab navigator setup
