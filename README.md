@@ -134,17 +134,16 @@ Changes I made:
 - Added an alert message on the edit screen.
 
 - added a filter on the menu screen.
+
+  App features:
   
   WelcomeScreen.tsx
 
-A classy intro scene that sets the tone — featuring a background of the chef himself and a welcoming message.
+A classy introduction screen that sets the tone featuring a background of the chef himself and a welcoming message.
 
 A perfect place to start your culinary coding adventure.
 
 MenuScreen.tsx
-
-The digital dining room.
-Here, you can:
 
 View all dishes in a stylish FlatList
 
@@ -184,6 +183,17 @@ vector icons
 
 
 Project structure:
+
+ App.tsx file
+
+  Menu context - menu contex.tsx
+
+  src - screens
+
+  Assets - images
+
+
+  Refrance list:
 
 
 
