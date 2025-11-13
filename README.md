@@ -211,9 +211,33 @@ Project structure:
 
  [Accessed 13 November 2025]
 
-W3Schools, 2025. W3Schools TypeScript Tutorial [Online] Available at: <W3Schools TypeScript Tutorial >
+W3Schools, 2025. W3Schools TypeScript Tutorial [Online] Available at: <https://www.w3schools.com/typescript/ >
 
 [Accessed 13 November 2025]
+
+AI Dislosure
+
+Section were AI was used:
+
+proper grammer
+
+AI Tool ChatGPT5
+
+Purpose:
+
+i asked ai to give me a more grammer correct sentencing. and also to sturcture the words for me.
+
+Dates used: 12/11/2025-13/11/2025
+
+prompts used:
+
+"can you make a read me for my food app"
+
+Conversation screenShot:
+
+<img width="417" height="329" alt="image" src="https://github.com/user-attachments/assets/5ce78b55-7878-4d43-a1e6-14068fd41eef" />
+
+
 
 
 
