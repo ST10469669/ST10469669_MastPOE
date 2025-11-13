@@ -135,6 +135,8 @@ Changes I made:
 
 - added a filter on the menu screen.
 
+- Added code attribution in the code.
+
   App features:
   
   WelcomeScreen.tsx
