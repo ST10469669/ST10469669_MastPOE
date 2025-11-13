@@ -161,7 +161,7 @@ YouTube video link for code explanation:
 
 https://youtu.be/7iDCA4fblno?si=arN6zWzuP_jxssSz
 
-Youtube video link for app demnstration:
+Youtube video link for app demonstration:
 
 https://youtube.com/shorts/7fgHzTQzzho?si=c76qPWP2pWgYR8Pu
 
@@ -180,6 +180,10 @@ React Navigation
 filter
 
 vector icons
+
+React Context API
+
+React Native FlatList Component
 
 
 Project structure:
