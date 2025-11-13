@@ -119,6 +119,25 @@ Conversation screenShot:
 
 
 
+POE Part 3
+
+Changes I made:
+
+- I deleted the drop down.
+
+- Deleted the edit button on the menu screen.
+
+- Added an alert message on the menu screen before adding.
+
+- Added an alert message on the edit screen.
+
+- added a filter on the menu screen.
+
+  
+
+
+
+
 
 
 
